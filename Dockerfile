@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM golang:1.16.3-alpine as builder
 WORKDIR /go/src/github.com/mvazquezc/reverse-words/
 COPY main.go .
 RUN go get github.com/gorilla/mux && go get github.com/prometheus/client_golang/prometheus/promhttp
