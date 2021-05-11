@@ -97,7 +97,7 @@ func TestGetEnv(t *testing.T) {
 
 func TestReverse(t *testing.T) {
     result := reverse("PALC")
-    if result != "CLAP" {
+    if result != "CLAPS" {
         t.Errorf("TestReverse failed, expected %v, got %v", "CLAP", result)
     }
 }
